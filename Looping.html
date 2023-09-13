@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        
+        
+        const jsonObject = {
+                "name": "John",
+                "age": 30,
+                "city": "New York"
+                };
+                //For Loop
+                for(let i=0;i<jsonObject.age-28;i++)
+                    {
+                    console.log(jsonObject);
+                    }
+                //For IN Loop
+                for (const key in jsonObject) {
+                    if (jsonObject.hasOwnProperty(key)) {
+                        const value = jsonObject[key];
+                        console.log(`${key}: ${value}`);
+                    }
+                }
+
+                //ForEach of Loop
+                const population = {
+                male: 4,
+                female: 93,
+                others: 10
+                };
+
+                let totalPopulation = 0;
+                let numbers = Object.values(population);
+
+                numbers.forEach((number) => {
+                    totalPopulation += number;
+                });
+
+                console.log(totalPopulation);
+
+                //For of Loop
+                let populationArr = Object.entries(population);
+                for (array of populationArr){
+                    console.log(array);
+                }
+            
+    </script>
+</body>
+</html>
